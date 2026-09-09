@@ -310,7 +310,30 @@ function HoloLabel({ children }) { return <p style={{ fontSize: 10, letterSpacin
 function HoloTitle({ children, size = 14 }) { return <h2 style={{ fontSize: size, fontWeight: 600, color: C.text, textShadow: "0 0 12px rgba(34,232,245,0.35)", letterSpacing: 0.5 }}>{children}</h2>; }
 function RiskPill({ level }) {
   const col = riskColor(level);
-  return <span style={{ fontSize: 9, fontWeight: 700, padding: "2px 8px", borderRadius: 20, letterSpacing: 1, color: col, border: `1px solid ${col}`, boxShadow: `0 0 8px ${col}55`, textTransform: "uppercase" }}>{level}</span>;
+
+  return (
+    <span
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: 9,
+        fontWeight: 700,
+        padding: "5px 9px",
+        minWidth: 52,
+        borderRadius: 6,
+        letterSpacing: 0.8,
+        color: col,
+        border: `1px solid ${col}99`,
+        background: `${col}12`,
+        textTransform: "uppercase",
+        lineHeight: 1,
+        whiteSpace: "nowrap",
+      }}
+    >
+      {level}
+    </span>
+  );
 }
 function StatCard({ icon: Icon, title, value, label }) {
   return (
