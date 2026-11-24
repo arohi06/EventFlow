@@ -2,6 +2,8 @@
 
 ## AI-Powered Mega-Event Hospitality & Orchestration Platform
 
+GHP4N6
+
 > **Monitor → Predict → Explain → Recommend → Simulate → Apply → Guide → Updated State**
 
 EventFlow AI is an AI-powered decision-support platform for managing complex mega-events.
